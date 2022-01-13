@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Buổi 4</title>
+    </head>
+    <body>
+        <!-- Tạo form -->
+        <!-- input type:-->
+        <form action="buoi3.html" method="GET">
+            <label for="ho_ten">Họ tên: </label>
+            <input type="text" name="ho_ten" placeholder="Nhập họ tên" id="ho_ten"/><br />
+            Ngày sinh: <input type="date" value="2000-01-01" name="ngay_sinh"/><br />
+            Giờ sinh: <input type="time" value="09:00:45" name="ngay_sinh"/><br />
+            Ngày và giờ: <input type="datetime-local" value="2022-01-01T09:00:45" name="ngay_va_gio"/><br />
+            Địa chỉ: <input type="text" name="dia_chi"/><br />
+            SĐT: <input type="text" name="so_dien_thoai"/><!-- <input type="number"> --><br />
+            Giới tính: <input type="radio" name="gioi_tinh" checked value="1"/> Nam <input type="radio" name="gioi_tinh" value="0"/> Nữ <input type="radio" name="gioi_tinh" value="3"> Khác<br />
+            Sở thích: <input type="checkbox" name="so_thich[]" value="game"> Game <input type="checkbox" name="so_thich[]" value="bong_da"> Bóng đá <br>
+            Quê quán: Tỉnh/Thành phố 
+            <select name="que_quan">
+                <option value="ha_noi">Hà Nội</option>
+                <option value="tphcm">TPHCM</option>
+                <option value="hai_phong">Hải Phòng</option>
+            </select><br>
+            Email: <input type="email" name="email"><br>
+            Password: <input type="password" name="pwd"><br>
+            Ghi chú: <textarea name="ghi_chu">abc</textarea><br>
+            Ảnh: <input type="file" name="anh" accept="image/*"><br>
+            <input type="color"><br>
+            <input type="hidden" value="Hello" name="hidden">
+            <input type="week"><input type="month"><br>
+            <button>Submit</button><!-- <input type="submit" value="Submit">-->
+            <button type="button">Button</button><!-- <input type="button" value="Button">-->
+            <button type="reset">Reset</button><!-- <input type="reset" value="Reset">-->
+        </form>
+    </body>
+</html>
