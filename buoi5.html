@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buổi 5</title>
+</head>
+<body>
+    <!-- 3 loại danh sách -->
+    <!-- Danh sách không có thứ tự: ul - unordered list -->
+    <!-- Cà phê, sinh tố, nước ép -->
+    <ul>
+        <!-- li - list item -->
+        <li>Cà phê</li>
+        <li>Sinh tố</li>
+        <li>Nước ép</li>
+    </ul>
+    <ul style="list-style-type: square;">
+        <!-- li - list item -->
+        <li>Cà phê</li>
+        <li>Sinh tố</li>
+        <li>Nước ép</li>
+    </ul>
+    <ul style="list-style-type: circle;">
+        <!-- li - list item -->
+        <li>Cà phê</li>
+        <li>Sinh tố</li>
+        <li>Nước ép</li>
+    </ul>
+    <ul style="list-style-type: none;">
+        <!-- li - list item -->
+        <li>Cà phê</li>
+        <li>Sinh tố</li>
+        <li>Nước ép</li>
+    </ul>
+    <!-- Danh sách có thứ tự: ol - ordered list -->
+    <ol start="10">
+        <li>Bước 1</li>
+        <li>Bước 2</li>
+        <li>Bước 3</li>
+        <li>Bước 4</li>
+        <li>Bước 5</li>
+    </ol>
+    <ol start="100" style="list-style-type: upper-alpha;">
+        <li>Bước 1</li>
+        <li>Bước 2</li>
+        <li>Bước 3</li>
+        <li>Bước 4</li>
+        <li>Bước 5</li>
+    </ol>
+    <ol start="100" type="a">
+        <li>Bước 1</li>
+        <li>Bước 2</li>
+        <li>Bước 3</li>
+        <li>Bước 4</li>
+        <li>Bước 5</li>
+    </ol>
+    <ol style="list-style-type: armenian;">
+        <li>Bước 1</li>
+        <li>Bước 2</li>
+        <li>Bước 3</li>
+        <li>Bước 4</li>
+        <li>Bước 5</li>
+    </ol>
+    <!-- Danh sách mô tả -->
+    <dl>
+        <dt>1.</dt>
+        <dd>1.1</dd>
+    </dl>
+    <!-- Lồng danh sách: ul - ul, ol - ol, ul - ol, ol - ul -->
+    <dl>
+        <dt>Tiền nhiều để làm gì</dt>
+        <dd>Ăn</dd>
+        <dd>Chơi</dd>
+        <dt>Làm gì để nhiều tiền</dt>
+        <dd>Vietlot</dd>
+        <dd>18h30</dd>
+    </dl>
+    <ul style="list-style-type: none;">
+        <li>Tiền nhiều để làm gì
+            <ul style="list-style-type: none;">
+                <li>Ăn</li>
+                <li>Chơi</li>
+            </ul>
+        </li>
+        <li>Làm gì để nhiều tiền
+            <ol style="list-style-type: none;">
+                <li>Vietlot</li>
+                <li>18h30</li>
+            </ol>
+        </li>
+    </ul>
+    <!-- Entity & symbol
+        C1: tên entity || symbol - &tên entity || symbol;
+        C2: mã entity || symbol - &#mã entity || symbol;
+    -->
+    &nbsp;
+    &lt;li&gt; Đây là thẻ li &#60;/li&#62;
+    <br>
+    &copy;
+</body>
+</html>
