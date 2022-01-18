@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buổi 6</title>
+    <style>
+        p {
+            color: #00ff00;
+            font-weight: bold;
+        }
+        #the_h1 {
+            color: #a35778;
+            font-style: italic;
+        }
+        .the {
+            color: rgb(111, 95, 180);
+            font-family: 'Courier New', Courier, monospace;
+        }
+        /* <selector> {
+            Các thuộc tính;
+        } 
+        <tag name> {
+            Các thuộc tính;
+        }
+        #<id> {
+            Các thuộc tính;
+        }
+        .<class> {
+            Các thuộc tính;
+        }
+        */
+    </style>
+    <link rel="stylesheet" href="css/buoi6.css">
+</head>
+<body>
+    <!-- CSS: Cascading Style Sheet -->
+    <!-- CSS có 3 cách viết
+        1. inline: dùng thuộc tính style của html
+        2. internal: thẻ style
+        3. external: viết css ra file khác có đuôi là .css, sau đó nhúng link css vào html bằng thẻ link
+    -->
+    <!-- Các selector chính: tag name, id, class -->
+    <!-- Độ ưu tiên của các cách viết CSS: càng gần thẻ thì độ ưu tiên càng cao
+        1. inline
+        2. internal || external
+        3. default
+    -->
+    <p style="color: #ff00ff; font-style: italic;">Đây là thẻ p</p>
+    <p>Đây là thẻ paragraph</p>
+    <p id="demo">
+        <p>Đây là thẻ đoạn văn</p>
+        <span class="the_2">demo</span>
+        <span class="the_2">Demo 2</span>
+    </p>
+    <h1 id="the_h1">Đây là thẻ h1</h1>
+    <h2 class="the">Đây là thẻ h2</h2>
+    <h3 class="the">Đây là thẻ h3</h3>
+    <a href="#" class="the">Link</a>
+    <span class="the_2">demo</span>
+</body>
+</html>
