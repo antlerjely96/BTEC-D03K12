@@ -1,0 +1,28 @@
+#div_1 {
+    background: #a6c0a1 url(../image/demo_background.jpg) no-repeat fixed center right;
+    /* r: 256
+        g: 256
+        b: 256
+    */
+    width: 100%;
+    height: 1000px;
+    /* border: red 5px; */
+    border-top-style: dashed;
+    border-top-width: 1px;
+    border-top-color: aqua;
+    border-bottom-style: dotted;
+    border-bottom-width: 5px;
+    border-bottom-color: rgb(200, 255, 0);
+    border-left: rgb(168, 24, 24) 2px solid;
+    border-right: rgb(19, 6, 197) 1px double;
+}
+#div_2 {
+    background: rgb(185, 105, 105);
+    width: 50%;
+    height: 200px;
+}
+#div_3 {
+    background: rgb(165, 61, 139);
+    width: 60%;
+    height: 100px;
+}
