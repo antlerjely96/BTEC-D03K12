@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BT2</title>
+    <style>
+        #all {
+            background: red;
+            width: 100%;
+            height: 600px;
+        }
+        #top {
+            background: violet;
+            width: 100%;
+            height: 10%;
+        }
+        #bottom {
+            background: rgb(222, 224, 74);
+            width: 100%;
+            height: 90%;
+        }
+        #top-left {
+            background: rgb(132, 130, 238);
+            width: 20%;
+            height: 100%;
+            float: left;
+        }
+        #top-right {
+            background: rgb(14, 37, 241);
+            width: 80%;
+            height: 100%;
+            float: left;
+        }
+        #bottom-left {
+            background: rgb(230, 35, 213);
+            width: 20%;
+            height: 100%;
+            float: left;
+        }
+        #bottom-right {
+            background: rgb(240, 52, 62);
+            width: 80%;
+            height: 100%;
+            float: left;
+        }
+        #bottom-left-top {
+            background: rgb(35, 230, 51);
+            width: 100%;
+            height: 50%;
+        }
+        #bottom-left-bottom {
+            background: rgb(26, 124, 31);
+            width: 100%;
+            height: 50%;
+        }
+        #bottom-right-content {
+            background: rgb(52, 212, 240);
+            width: 80%;
+            height: 100%;
+            margin: auto;
+        }
+        #bottom-right-content-left {
+            background: rgb(165, 102, 86);
+            width: 80%;
+            height: 100%;
+            float: left;
+        }
+        #bottom-right-content-right {
+            background: rgb(228, 76, 16);
+            width: 20%;
+            height: 100%;
+            float: left;
+        }
+        #bottom-right-content-left-top {
+            background: rgb(86, 165, 93);
+            width: 100%;
+            height: 20%;
+        }
+        #bottom-right-content-left-right {
+            background: rgb(157, 165, 86);
+            width: 100%;
+            height: 80%;
+        }
+    </style>
+</head>
+<body>
+    <div id="all">
+        <div id="top">
+            <div id="top-left"></div>
+            <div id="top-right"></div>
+        </div>
+        <div id="bottom">
+            <div id="bottom-left">
+                <div id="bottom-left-top"></div>
+                <div id="bottom-left-bottom"></div>
+            </div>
+            <div id="bottom-right">
+                <div id="bottom-right-content">
+                    <div id="bottom-right-content-left">
+                        <div id="bottom-right-content-left-top"></div>
+                        <div id="bottom-right-content-left-bottom"></div>
+                    </div>
+                    <div id="bottom-right-content-right"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
