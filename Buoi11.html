@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buổi 11</title>
+    <style>
+        /* position: static, absolute, fixed, ralative
+            static: mặc định
+            absolute: vị trí tương đối với các phần tử chứa nó có posion relative || absolute, nếu k có relative || absplute sẽ căn theo body
+            relative: vị trí tuyệt đối
+            fixed: cố định trên màn hình
+            z-index: thay đổi cái hiển trị trên dưới
+            overflow: tạo thanh kéo
+        */
+        #div-1 {
+            background: aquamarine;
+            width: 80%;
+            height: 1500px;
+            position: relative;
+        }
+        #div-2 {
+            background: rgb(242, 255, 127);
+            width: 80%;
+            height: 50%;
+            position: relative;
+            top: 200px;
+            left: 100px;
+        }
+        #div-3 {
+            background: rgb(255, 163, 127);
+            width: 80%;
+            height: 50%;
+        }
+        #div-4 {
+            background: rgb(136, 127, 255);
+            width: 80%;
+            height: 50%;
+            position: absolute;
+            top: -100px;
+            left: -50px;
+            overflow: scroll;
+        }
+    </style>
+</head>
+<body>
+    <div id="div-1">
+        <div id="div-2">
+            <div id="div-4">
+                <p style="width: 1000px">
+                    Đây là thẻ p Đây là thẻ p Đây là thẻ p
+                    Đây là thẻ p Đây là thẻ p Đây là thẻ p
+                    Đây là thẻ p Đây là thẻ p Đây là thẻ p
+                    Đây là thẻ p Đây là thẻ p Đây là thẻ p
+                    Đây là thẻ p Đây là thẻ p Đây là thẻ p
+                    Đây là thẻ p Đây là thẻ p Đây là thẻ p
+                    Đây là thẻ p Đây là thẻ p Đây là thẻ p
+                    Đây là thẻ p Đây là thẻ p Đây là thẻ p
+                    Đây là thẻ p Đây là thẻ p Đây là thẻ p
+                    Đây là thẻ p Đây là thẻ p Đây là thẻ p
+                    Đây là thẻ p Đây là thẻ p Đây là thẻ p
+                    Đây là thẻ p Đây là thẻ p Đây là thẻ p
+                    Đây là thẻ p Đây là thẻ p Đây là thẻ p
+                    Đây là thẻ p Đây là thẻ p Đây là thẻ p
+                    Đây là thẻ p Đây là thẻ p Đây là thẻ p
+                    Đây là thẻ p Đây là thẻ p Đây là thẻ p
+                    Đây là thẻ p Đây là thẻ p Đây là thẻ p
+                    Đây là thẻ p Đây là thẻ p Đây là thẻ p
+                    Đây là thẻ p Đây là thẻ p Đây là thẻ p
+                    Đây là thẻ p Đây là thẻ p Đây là thẻ p
+                    Đây là thẻ p Đây là thẻ p Đây là thẻ p
+                    Đây là thẻ p Đây là thẻ p Đây là thẻ p
+                    Đây là thẻ p Đây là thẻ p Đây là thẻ p
+                    Đây là thẻ p Đây là thẻ p Đây là thẻ p
+                    Đây là thẻ p Đây là thẻ p Đây là thẻ p
+                    Đây là thẻ p Đây là thẻ p Đây là thẻ p
+                    Đây là thẻ p Đây là thẻ p Đây là thẻ p
+                    Đây là thẻ p Đây là thẻ p Đây là thẻ p
+                    Đây là thẻ p Đây là thẻ p Đây là thẻ p
+                    Đây là thẻ p Đây là thẻ p Đây là thẻ p
+                    Đây là thẻ p Đây là thẻ p Đây là thẻ p
+                    Đây là thẻ p Đây là thẻ p Đây là thẻ p
+                    Đây là thẻ p Đây là thẻ p Đây là thẻ p
+                    Đây là thẻ p Đây là thẻ p Đây là thẻ p
+                    Đây là thẻ p Đây là thẻ p Đây là thẻ p
+                    Đây là thẻ p Đây là thẻ p Đây là thẻ p
+                    Đây là thẻ p Đây là thẻ p Đây là thẻ p
+                    Đây là thẻ p Đây là thẻ p Đây là thẻ p
+                    Đây là thẻ p Đây là thẻ p Đây là thẻ p
+                    Đây là thẻ p Đây là thẻ p Đây là thẻ p
+                    Đây là thẻ p Đây là thẻ p Đây là thẻ p
+                    Đây là thẻ p Đây là thẻ p Đây là thẻ p
+                    Đây là thẻ p Đây là thẻ p Đây là thẻ p
+                    Đây là thẻ p Đây là thẻ p Đây là thẻ p
+                    Đây là thẻ p Đây là thẻ p Đây là thẻ p
+                    Đây là thẻ p Đây là thẻ p Đây là thẻ p
+                    Đây là thẻ p Đây là thẻ p Đây là thẻ p
+                    Đây là thẻ p Đây là thẻ p Đây là thẻ p
+                    Đây là thẻ p Đây là thẻ p Đây là thẻ p
+                    Đây là thẻ p Đây là thẻ p Đây là thẻ p
+                    Đây là thẻ p Đây là thẻ p Đây là thẻ p
+                    Đây là thẻ p Đây là thẻ p Đây là thẻ p
+                    Đây là thẻ p Đây là thẻ p Đây là thẻ p
+                    Đây là thẻ p Đây là thẻ p Đây là thẻ p
+                    Đây là thẻ p Đây là thẻ p Đây là thẻ p
+                    Đây là thẻ p Đây là thẻ p Đây là thẻ p
+                    Đây là thẻ p Đây là thẻ p Đây là thẻ p
+                    Đây là thẻ p Đây là thẻ p Đây là thẻ p
+                    Đây là thẻ p Đây là thẻ p Đây là thẻ p
+                    Đây là thẻ p Đây là thẻ p Đây là thẻ p
+                    Đây là thẻ p Đây là thẻ p Đây là thẻ p
+                    Đây là thẻ p Đây là thẻ p Đây là thẻ p
+                    Đây là thẻ p Đây là thẻ p Đây là thẻ p
+                    Đây là thẻ p Đây là thẻ p Đây là thẻ p
+                    Đây là thẻ p Đây là thẻ p Đây là thẻ p
+                    Đây là thẻ p Đây là thẻ p Đây là thẻ p
+                    Đây là thẻ p Đây là thẻ p Đây là thẻ p
+                    Đây là thẻ p Đây là thẻ p Đây là thẻ p
+                    Đây là thẻ p Đây là thẻ p Đây là thẻ p
+                    Đây là thẻ p Đây là thẻ p Đây là thẻ p
+                    Đây là thẻ p Đây là thẻ p Đây là thẻ p
+                    Đây là thẻ p Đây là thẻ p Đây là thẻ p
+                    Đây là thẻ p Đây là thẻ p Đây là thẻ p
+                    Đây là thẻ p Đây là thẻ p Đây là thẻ p
+                    Đây là thẻ p Đây là thẻ p Đây là thẻ p
+                    Đây là thẻ p Đây là thẻ p Đây là thẻ p
+                    Đây là thẻ p Đây là thẻ p Đây là thẻ p
+                    Đây là thẻ p Đây là thẻ p Đây là thẻ p
+                    Đây là thẻ p Đây là thẻ p Đây là thẻ p
+                    Đây là thẻ p Đây là thẻ p Đây là thẻ p
+                    Đây là thẻ p Đây là thẻ p Đây là thẻ p
+                    Đây là thẻ p Đây là thẻ p Đây là thẻ p
+                    Đây là thẻ p Đây là thẻ p Đây là thẻ p
+                    Đây là thẻ p Đây là thẻ p Đây là thẻ p
+                    Đây là thẻ p Đây là thẻ p Đây là thẻ p
+                    Đây là thẻ p Đây là thẻ p Đây là thẻ p
+                    Đây là thẻ p Đây là thẻ p Đây là thẻ p
+                    Đây là thẻ p Đây là thẻ p Đây là thẻ p
+                    Đây là thẻ p Đây là thẻ p Đây là thẻ p
+                    Đây là thẻ p Đây là thẻ p Đây là thẻ p
+                    Đây là thẻ p Đây là thẻ p Đây là thẻ p
+                    Đây là thẻ p Đây là thẻ p Đây là thẻ p
+                    Đây là thẻ p Đây là thẻ p Đây là thẻ p
+                    Đây là thẻ p Đây là thẻ p Đây là thẻ p
+                </p>
+            </div>
+        </div>
+        <div id="div-3">
+        </div>
+    </div>
+</body>
+</html>
