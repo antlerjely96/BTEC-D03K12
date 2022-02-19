@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buổi 12</title>
+    <!-- pseudo class: viết cho thẻ
+        <selector>:<pseudo-class> {
+            Các thuộc tính;    
+        }
+        a:hover
+
+        pseudo-element: viết cho nội dung thẻ
+        <selector>::<pseudo-element> {
+            Các thuộc tính;    
+        }
+    -->
+    <style>
+        /* p:first-child {
+            color: red;
+        }
+        div:first-child p{
+            color: blue;
+        }
+        p::first-letter {
+            text-decoration: line-through;
+        } */
+        /* >: các thẻ con */
+        /* div > p {
+            font-style: italic;
+        } */
+        /* +: thẻ đầu tiên cùng cấp sau selector */
+        /* div + p {
+            color: red;
+        } */
+        /* ~: tất cả các thẻ cùng cấp sau selector */
+        div ~ p {
+            color: green;
+        }
+        /* attribute selector
+            <selector>[<attr>] {
+                Các thuộc tính;
+            }
+            <selector>[<attr> = 'value'] {
+                Các thuộc tính;
+            }
+        */
+        p[title] {
+            color: hotpink;
+        }
+        p[title = "p6"] {
+            color: lightseagreen;
+        }
+    </style>
+</head>
+<body>
+    <p>Đây là p1</p>
+    <p>Đây là p2</p>
+    <p title="p3">Đây là p3</p>
+    <div>
+        <div>
+            <p>Đây là p4</p>
+            <p>Đây là p5</p>
+        </div>
+        <div>
+            <p title="p6">Đây là p6</p>
+            <p>Đây là p7</p>
+            <div>
+                <p>Đây là p8</p>
+                <p>Đây là p9</p>
+            </div>
+        </div>
+    </div>
+    <nav>
+        <p>Đây là thẻ p10</p>
+    </nav>
+    <p>Đây là thẻ p11</p>
+    <p>Đây là thẻ p12</p>
+</body>
+</html>
