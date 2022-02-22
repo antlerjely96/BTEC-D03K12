@@ -18,6 +18,11 @@
         function mang(){
             var arr = [0, 1, 5, 10, 9, 100];
             document.getElementById('mang').innerHTML = arr.toString();
+            console.log(Math.PI);
+            console.log(Math.floor(4.6));
+            console.log(Math.ceil(4.6));
+            console.log(Math.round(Math.random() * 100));
+            console.log(Math.round(4));
         }
         function sap_xep(){
             var arr = [0, 1, 5, 10, 9, 100];
@@ -33,12 +38,34 @@
             }
             document.getElementById('mang_sau_sort').innerHTML = arr.toString();
         }
-        /* BT: cho mảng arr có 10 phần tử. Tính tổng các phần tử */
+        /* BT: cho mảng arr có 10 phần tử. 
+        Tính tổng các phần tử */
+        function tinh_tong(){
+            var arr = [1,2,3,4,5,6,7,8,9,10];
+            var tong = 0;
+            for(var i = arr.length - 1; i >= 0; i--){
+                tong += Number(arr[i]);
+            }
+            document.getElementById('tong').innerHTML = "Tổng các phần tử: " + tong;
+        }
+        /* 1. Nhập số n từ bàn phím. 
+        Kiểm tra n có phải số nguyên tố không
+        2. Nhập số n từ bàn phím. Hiển thị tất cả các số nguyên tố trong khoảng từ 1 đến n
+        */
     </script>
 </head>
 <body onload="mang()">
     <p id="mang"></p>
     <p id="mang_sau_sort"></p>
     <button id="sap_xep" onclick="sap_xep()">Sắp xếp</button>
+    <br>
+
+    <!-- <p>Nhập mảng</p>
+    Phần tử <i>0</i> : <input type="number" id="phan_tu"><br>
+    <button onclick="">Nhập</button>
+    <button onclick="">Tính tổng</button> -->
+
+    <p id="tong"></p>
+    <button onclick="tinh_tong()">Tính tổng</button>
 </body>
 </html>
