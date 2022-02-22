@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buổi 15</title>
+    <script>
+        // array
+        // function
+        // Math library
+        // Regular Expression
+        
+        // var array1 = [0,"abc"];
+        // var car = new Array();
+        // array.sort();
+        // console.log(array);
+        function mang(){
+            var arr = [0, 1, 5, 10, 9, 100];
+            document.getElementById('mang').innerHTML = arr.toString();
+        }
+        function sap_xep(){
+            var arr = [0, 1, 5, 10, 9, 100];
+            var temp;
+            for(var i = 0; i < arr.length - 1; i++){
+                for(var j = i + 1; j < arr.length; j++){
+                    if(Number(arr[i]) > Number(arr[j])){
+                        temp = arr[i];
+                        arr[i] = arr[j];
+                        arr[j] = temp;
+                    }
+                }
+            }
+            document.getElementById('mang_sau_sort').innerHTML = arr.toString();
+        }
+        /* BT: cho mảng arr có 10 phần tử. Tính tổng các phần tử */
+    </script>
+</head>
+<body onload="mang()">
+    <p id="mang"></p>
+    <p id="mang_sau_sort"></p>
+    <button id="sap_xep" onclick="sap_xep()">Sắp xếp</button>
+</body>
+</html>
