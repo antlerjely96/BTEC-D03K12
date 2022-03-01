@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buổi 17</title>
+    <!-- Regular Expression (Regex)-->
+    <script>
+        function validate_demo(){
+            //validate họ tên
+            var regex_ho_ten = /^[a-zA-ZàÀảẢãÃáÁạẠăĂằẰẳẲẵẴắẮặẶâÂầẦẩẨẫẪấẤậẬđĐèÈẻẺẽẼéÉẹẸêÊềỀểỂễỄếẾệỆìÌỉỈĩĨíÍịỊòÒỏỎõÕóÓọỌôÔồỒổỔỗỖốỐộỘơƠờỜởỞỡỠớỚợỢùÙủỦũŨúÚụỤưƯừỪửỬữỮứỨựỰỳỲỷỶỹỸýÝỵỴ\s]+$/;
+            var ho_ten = document.getElementById('ho-ten').value;
+            var dem = 0;
+            var kq_ho_ten = regex_ho_ten.test(ho_ten);
+            if(ho_ten.length == 0){
+                document.getElementById('error-ho-ten').innerHTML = "Phải nhập họ tên";
+                dem++;
+            }
+            else if(kq_ho_ten == false){
+                document.getElementById('error-ho-ten').innerHTML = "Họ tên không được chứa chữ số và ký tự đặc biệt";
+                dem++;
+            }
+            else {
+                document.getElementById('error-ho-ten').innerHTML = "";
+            }
+            // 
+            var ngay_sinh = document.getElementById('ngay-sinh').value;
+            if(ngay_sinh.length == 0){
+                document.getElementById('error-ngay-sinh').innerHTML = "Phải nhập ngày sinh";
+                dem++;
+            }
+            else {
+                document.getElementById('error-ngay-sinh').innerHTML = "";
+            }
+            // 
+            var dia_chi = document.getElementById('dia-chi').value;
+            if(dia_chi.length == 0){
+                document.getElementById('error-dia-chi').innerHTML = "Phải nhập địa chỉ";
+                dem++;
+            }
+            else {
+                document.getElementById('error-dia-chi').innerHTML = "";
+            }
+            // 
+            var regex_so_dien_thoai = /^0[0-9]{9,10}$/;
+            var so_dien_thoai = document.getElementById('so-dien-thoai').value;
+            var kq_so_dien_thoai = regex_so_dien_thoai.test(so_dien_thoai);
+            if(so_dien_thoai.length == 0){
+                document.getElementById('error-so-dien-thoai').innerHTML = "Phải nhập số điện thoại";
+                dem++;
+            }
+            else if(kq_so_dien_thoai == false){
+                document.getElementById('error-so-dien-thoai').innerHTML = "Phải nhập đúng số điện thoại";
+                dem++;
+            }
+            else {
+                document.getElementById('error-so-dien-thoai').innerHTML = "";
+            }
+            // 
+            var regex_email = /^[a-zA-Z0-9]+[.a-zA-Z0-9]*@[a-z]{3,8}.[a-z]{2,4}[.a-zA-Z0-9]*$/;
+            var email = document.getElementById('email').value;
+            var kq_email = regex_email.test(email);
+            if(email.length == 0){
+                document.getElementById('error-email').innerHTML = "Phải nhập email";
+                dem++;
+            }
+            else if(kq_email == false){
+                document.getElementById('error-email').innerHTML = "Phải nhập đúng email";
+                dem++;
+            }
+            else {
+                document.getElementById('error-email').innerHTML = "";
+            }
+            // 
+            var gioi_tinh = Array();
+            gioi_tinh = document.getElementsByName('gioi-tinh');
+            var dem_2 = 0;
+            for(var i = 0; i < gioi_tinh.length; i++){
+                if(gioi_tinh[i].checked){
+                    dem_2++;
+                }
+            }
+            if(dem_2 == 0){
+                document.getElementById('error-gioi-tinh').innerHTML = "Phải chọn giới tính";
+                dem++;
+            }
+            else {
+                document.getElementById('error-gioi-tinh').innerHTML = "";
+            }
+            // 
+            var f0 = document.getElementById('f0').value;
+            console.log(f0);
+            if(f0.length == 0){
+                document.getElementById('error-f0').innerHTML = "Đề nghị chọn";
+                dem++;
+            }
+            else {
+                document.getElementById('error-f0').innerHTML = "";
+            }
+            //
+            var textarea_demo = document.getElementById('textarea-demo').value;
+            if(textarea_demo.length == 0){
+                document.getElementById('error-textarea-demo').innerHTML = "Phải nhập";
+                dem++;
+            }
+            else {
+                document.getElementById('error-textarea-demo').innerHTML = "";
+            }
+            //
+            var anh = document.getElementById('anh').value;
+            if(anh.length == 0){
+                document.getElementById('error-anh').innerHTML = "Phải nhập";
+                dem++;
+            }
+            else {
+                document.getElementById('error-anh').innerHTML = "";
+            }
+            if(dem != 0){
+                return false;
+            }
+            return true;
+        }
+    </script>
+</head>
+<body>
+    <form action="buoi15.html" method="GET">
+        Họ tên: <input type="text" id="ho-ten"> <span id="error-ho-ten"></span><br>
+        Ngày sinh: <input type="date" id="ngay-sinh"> <span id="error-ngay-sinh"></span><br>
+        Địa chỉ: <input type="text" id="dia-chi"> <span id="error-dia-chi"></span><br>
+        Số điện thoại: <input type="text" id="so-dien-thoai"> <span id="error-so-dien-thoai"></span><br>
+        Giới tính: <input type="radio" name="gioi-tinh"> Nam <input type="radio" name="gioi-tinh"> Nữ <input type="radio" name="gioi-tinh"> Khác <span id="error-gioi-tinh"></span><br>
+        Email: <input type="email" id="email"> <span id="error-email"></span><br>
+        F0: <select id="f0">
+                <option value="">- Chọn -</option>
+                <option value="0">Không</option>
+                <option value="1">Có</option>
+                <option value="2">Đoán xem</option>
+                <option value="3">"Không" của mấy đứa con gái</option>
+            </select>
+            <span id="error-f0"></span><br>
+            <textarea id="textarea-demo" cols="30" rows="10"></textarea>
+            <span id="error-textarea-demo"></span><br>
+            Ảnh: <input type="file" id="anh"><span id="error-anh"></span><br>
+        <button onclick="return validate_demo()">Submit</button>
+    </form>
+</body>
+</html>
